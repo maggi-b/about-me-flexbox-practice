@@ -97,33 +97,45 @@ textarea {
 
 
 html {
-  background-color: #fff;
-  height: 100%;
+    background: url(../img/dark-snow-mountain.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
-  font-size: 1.25em;
-  height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 2em;
+    font-size: 1em;
+    height: 100%;
 }
 
 .wrapper {
-  font-weight: 700;
-  display: flex;
-  justify-content: space-between;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
 }
 
-.div-1, .div-2, .div-3 {
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  height: 300px;
-  display: flex;
-  width: 30%;
-  justify-content: center;
-  align-items: center;
+.div-1,
+.div-2,
+.div-3 {
+    display: flex;
+    color: #fff;
+    line-height: 1.25em;
+    font-size: 1.25em;
+    background-color: #3f4c5b;
+    background-color: rgba(63, 76, 91, 0.5);
+    height: auto;
+    width: 33.333%;
+    justify-content: center;
+    border-left: grey solid 0.05em;
+    text-align: left;
+    padding: 0.5em;
+    border-top: grey solid 0.05em;
+    border-bottom: grey solid 0.05em;
+}
+
+.div-3 {
+    border-right: grey solid 0.05em;
 }
 
 
@@ -195,8 +207,10 @@ body {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
@@ -210,9 +224,9 @@ body {
    ========================================================================== */
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -223,11 +237,13 @@ body {
    ========================================================================== */
 
 @media print {
+
     *,
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
